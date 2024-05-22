@@ -1,0 +1,151 @@
+/* Broad site-wide styles */
+body {
+    background: #1f513b;
+    background: linear-gradient(to top right, #1f513b, #0F2725) fixed;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, .brand-logo {
+    font-family: 'Arvo', serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.75em;
+}
+
+strong {
+    font-family: 'Arvo', serif;
+    padding: 4px 0;
+    display: block;
+    font-size: 1.10em;
+}
+
+button, button:focus {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #d60438;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: 0;
+}
+
+button.secondary {
+    background: #1E6692;
+}
+
+button:active {
+    background: black;
+}
+
+button.disabled-button, button.secondary.disabled-button {
+    background: #0F2725;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.road {
+    position: relative;
+    border: 3.5px solid black;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 100px;
+    background-color: #333;
+}
+
+.car {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 90px;
+}
+
+.finish-line {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: url('../img/finish-line.png') no-repeat center center;
+    background-size: cover;
+}
+
+.collider {
+    position: absolute;
+    right: 0;
+    width: 1px; /* Small fixed width */
+    height: 100%;
+    background-color: transparent; /* Invisible collider */
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.result-message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: yellow;
+}
+
+.plus{
+    margin: 5px !important;
+    padding: 10px 20px !important;
+    background: #d60438! important;
+    color: white !important;
+    font-size: 1.25em !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    border: 0 !important;
+}
+
+.minus{
+    margin: 5px !important;
+    padding: 10px 20px !important;
+    background: #d60438! important;
+    color: white !important;
+    font-size: 1.25em !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    border: 0 !important;
+}
+
+.car1{
+    margin: 5px !important;
+    padding: 10px 20px !important;
+    background: #d60438! important;
+    color: white !important;
+    font-size: 1.25em !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    border: 0 !important;
+}
+
+.car2 {
+    margin: 5px !important;
+    padding: 10px 20px !important;
+    background: #17da42 !important;
+    color: white !important;
+    font-size: 1.25em !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    border: 0 !important;
+}
