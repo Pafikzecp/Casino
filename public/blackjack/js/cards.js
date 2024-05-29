@@ -638,6 +638,7 @@ function getCards(){
 }
 //Full array of possible cards
 var cards;
+//CUM hehehehheh
 
 function getCards(){
 	cards = [
