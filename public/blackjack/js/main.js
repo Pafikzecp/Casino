@@ -99,9 +99,13 @@ function updateVisibleHandTotals() {
 }
 
 // Called when player clicks on a chip
-function selectWager(amount){
-    currentWager = amount;
-    updateVisibleChipBalances();
+function selectWager(amount) {
+    if (currentChipBalance >= currentWager + amount) {
+        currentWager += amount;  // Stack bets
+        updateVisibleChipBalances();
+    } else {
+        Materialize.toast("Insufficient balance for this bet", 1000);
+    }
 }
 
 //  ANIMATIONS/INTERACTIVITY:
@@ -163,6 +167,14 @@ $(hitButton).click(hit);
 $(standButton).click(stand);
 $(playAgainButton).click(newGame);
 $("#reset-game").click(resetGame);
+$("#reset-game").click(resetGame);
+$("#reset-wager-button").click(resetWager);  
+
+function resetWager() {
+    currentWager = 0;
+    updateVisibleChipBalances();
+    Materialize.toast("Bet reset to 0", 1000);
+}
 
 $(".reduce-aces-button").click(   // Can only see this if player draws 2 aces, would only be reducing in 1st deck
     function(){

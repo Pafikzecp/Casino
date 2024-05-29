@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_id'])) {
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>blackjack</title>
+	<title>casino</title>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -69,6 +69,7 @@ if (!isset($_SESSION['user_id'])) {
 				<img src="img/pile-chip.png" class="wager-small">
 				<span class="current-chip-balance">500</span>
 				<br>
+				<button id="reset-wager-button">Reset Bet</button>
 				<button id="start-game-button">Play</button>
 			</div>	
 		</div>

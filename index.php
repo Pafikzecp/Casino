@@ -33,7 +33,8 @@ include 'includes/navbar.php';
             <h1>Welcome to online Casino</h1>
             <p>Click below to start playing Blackjack!</p>
             <a href="public/blackjack/bj.php"><img src="public/img/bj.png" alt="Blackjack" style="max-width:30%;height:30%;"></a>
-            <a href="public/race/race.php"><img src="public/img/race.png" alt="Blackjack" style="max-width:30%;height:30%;"></a>
+            <a href="public/race/race.php"><img src="public/img/race.png" alt="race" style="max-width:30%;height:30%;"></a>
+            <a href="public/rullete/rullete.php"><img src="public/img/roulette.png" alt="rullete" style="max-width:30%;height:30%;"></a>
         </div>
     </div>
 </div>
